@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Livewire\Seller\SellerAddProductComponent;
+use App\Http\Livewire\Seller\SellerDashboardComponent;
+use App\Http\Livewire\Seller\SellerProductComponent;
+use App\Http\Livewire\Thanks;
 use App\Http\Middleware\AuthAdmin;
+use App\Http\Middleware\AuthSeller;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\ShopComponent;
@@ -53,6 +58,13 @@ Route::middleware(['auth','\App\Http\Middleware\AuthAdmin'])->group(function (){
     Route::get('/admin/product/delete/{product_id}',AdminProductComponent::class)->name('admin.product.delete');
 
 });
+
+Route::middleware('auth','\App\Http\Middleware\AuthSeller')->group(function (){
+    Route::get('/seller/dashboard',SellerDashboardComponent::class)->name('seller.dashboard');
+    Route::get('/seller/product/add',SellerAddProductComponent::class)->name('seller.product.add');
+    Route::get('/seller/product',SellerProductComponent::class)->name('seller.product');
+});
+
 Route::get('/',HomeComponent::class)->name('home.index');
 Route::get('/shop',ShopComponent::class)->name('shop');
 Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
@@ -60,6 +72,7 @@ Route::get('/cart',CartComponent::class)->name('shop.cart');
 Route::get('/checkout',CheckoutComponent::class)->name('shop.checkout');
 Route::get('/product-category/{slug}',CategoryComponent::class)->name('product.category');
 Route::get('/search',SearchComponent::class)->name('product.search');
+Route::get('/thank', Thanks::class)->name('thank');
 require __DIR__.'/auth.php';
 
 

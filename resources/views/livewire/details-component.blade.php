@@ -24,47 +24,10 @@
                                         <div class="product-image-slider">
                                             <figure class="border-radius-10">
                                                 <img src="{{asset('assets/imgs/products')}}/{{$product->image}}" alt="{{$product->name}}" alt="product image">
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-1.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-3.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-4.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-5.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-6.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
-{{--                                            <figure class="border-radius-10">--}}
-{{--                                                <img src="{{asset('assets/imgs/shop/product-16-7.jpg')}}" alt="product image">--}}
-{{--                                            </figure>--}}
+                                            </figure>
                                         </div>
-                                        <!-- THUMBNAILS -->
-{{--                                        <div class="slider-nav-thumbnails pl-15 pr-15">--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-3.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-4.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-5.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-6.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-7.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-8.jpg')}}" alt="product image"></div>--}}
-{{--                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-9.jpg')}}" alt="product image"></div>--}}
-{{--                                        </div>--}}
                                     </div>
-                                    <!-- End Gallery -->
-                                    <div class="social-icons single-share">
-                                        <ul class="text-grey-5 d-inline-block">
-                                            <li><strong class="mr-10">Share this:</strong></li>
-                                            <li class="social-facebook"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-facebook.svg')}}" alt=""></a></li>
-                                            <li class="social-twitter"> <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-twitter.svg')}}" alt=""></a></li>
-                                            <li class="social-instagram"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-instagram.svg')}}" alt=""></a></li>
-                                            <li class="social-linkedin"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-pinterest.svg')}}" alt=""></a></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="detail-info">
@@ -100,70 +63,59 @@
                                                 <li><i class="fi-rs-credit-card mr-5"></i> Cash on Delivery available</li>
                                             </ul>
                                         </div>
-                                        <div class="attr-detail attr-color mb-15">
-                                            <strong class="mr-10">Color</strong>
-                                            <ul class="list-filter color-filter">
-                                                <li><a href="#" data-color="Red"><span class="product-color-red"></span></a></li>
-                                                <li><a href="#" data-color="Yellow"><span class="product-color-yellow"></span></a></li>
-                                                <li class="active"><a href="#" data-color="White"><span class="product-color-white"></span></a></li>
-                                                <li><a href="#" data-color="Orange"><span class="product-color-orange"></span></a></li>
-                                                <li><a href="#" data-color="Cyan"><span class="product-color-cyan"></span></a></li>
-                                                <li><a href="#" data-color="Green"><span class="product-color-green"></span></a></li>
-                                                <li><a href="#" data-color="Purple"><span class="product-color-purple"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="attr-detail attr-size">
-                                            <strong class="mr-10">Storage</strong>
-                                            <ul class="list-filter size-filter font-small">
-                                                <li><a href="#">128G</a></li>
-                                                <li class="active"><a href="#">256G</a></li>
-                                                <li><a href="#">512G</a></li>
-                                                <li><a href="#">1T</a></li>
-                                                <li><a href="#">2T</a></li>
-                                            </ul>
-                                        </div>
+{{--                                        <div class="attr-detail attr-color mb-15">--}}
+{{--                                            <strong class="mr-10">Color</strong>--}}
+{{--                                            <ul class="list-filter color-filter">--}}
+{{--                                                <li><a href="#" data-color="Red"><span class="product-color-red"></span></a></li>--}}
+{{--                                                <li><a href="#" data-color="Yellow"><span class="product-color-yellow"></span></a></li>--}}
+{{--                                                <li class="active"><a href="#" data-color="White"><span class="product-color-white"></span></a></li>--}}
+{{--                                                <li><a href="#" data-color="Orange"><span class="product-color-orange"></span></a></li>--}}
+{{--                                                <li><a href="#" data-color="Cyan"><span class="product-color-cyan"></span></a></li>--}}
+{{--                                                <li><a href="#" data-color="Green"><span class="product-color-green"></span></a></li>--}}
+{{--                                                <li><a href="#" data-color="Purple"><span class="product-color-purple"></span></a></li>--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="attr-detail attr-size">--}}
+{{--                                            <strong class="mr-10">Storage</strong>--}}
+{{--                                            <ul class="list-filter size-filter font-small">--}}
+{{--                                                <li><a href="#">128G</a></li>--}}
+{{--                                                <li class="active"><a href="#">256G</a></li>--}}
+{{--                                                <li><a href="#">512G</a></li>--}}
+{{--                                                <li><a href="#">1T</a></li>--}}
+{{--                                                <li><a href="#">2T</a></li>--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
                                         <div class="bt-1 border-color-1 mt-30 mb-30"></div>
                                         <div class="detail-extralink">
-                                            <div class="detail-qty border radius">
-                                                <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                                <span class="qty-val">1</span>
-                                                <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
-                                            </div>
                                             <div class="product-extra-link2">
                                                 <button type="button" class="button button-add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})" >Add to cart</button>
-                                                <a aria-label="Add To Wishlist" class="action-btn hover-up" href="wishlist.php"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
                                         </div>
-                                        <ul class="product-meta font-xs color-grey mt-50">
-                                            <li class="mb-5">SKU: <a href="#">FWM15VKT</a></li>
-                                            <li class="mb-5">Tags: <a href="#" rel="tag">Cloth</a>, <a href="#" rel="tag">Women</a>, <a href="#" rel="tag">Dress</a> </li>
-                                            <li>Availability:<span class="in-stock text-success ml-5">8 Items In Stock</span></li>
-                                        </ul>
+
                                     </div>
                                     <!-- Detail Info -->
                                 </div>
                             </div>
-                            <div class="tab-style3">
-                                <ul class="nav nav-tabs text-uppercase">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="Description-tab" data-bs-toggle="tab" href="#Description">Description</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="Additional-info-tab" data-bs-toggle="tab" href="#Additional-info">Additional info</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">Reviews (3)</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content shop_info_tab entry-main-content">
-                                    <div class="tab-pane fade show active" id="Description">
-                                        <div class="">
-                                            {{$product->short_description}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <div class="tab-style3">--}}
+{{--                                <ul class="nav nav-tabs text-uppercase">--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a class="nav-link active" id="Description-tab" data-bs-toggle="tab" href="#Description">Description</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a class="nav-link" id="Additional-info-tab" data-bs-toggle="tab" href="#Additional-info">Additional info</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li class="nav-item">--}}
+{{--                                        <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">Reviews (3)</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                                <div class="tab-content shop_info_tab entry-main-content">--}}
+{{--                                    <div class="tab-pane fade show active" id="Description">--}}
+{{--                                        <div class="">--}}
+{{--                                            {{$product->short_description}}--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <div class="row mt-60">
                                 <div class="col-12">
                                     <h3 class="section-title style-1 mb-30">Related products</h3>
@@ -192,7 +144,7 @@
                                                     </div>
                                                     <div class="product-price">
                                                         <span>${{$rproduct->regular_price}} </span>
-                                                        <span class="old-price">$245.8</span>
+                                                        <span class="old-price">${{$rproduct->sell_price}}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -212,51 +164,6 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <!-- Fillter By Price -->
-                        <div class="sidebar-widget price_range range mb-30">
-                            <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">Fill by price</h5>
-                                <div class="bt-1 border-color-1"></div>
-                            </div>
-                            <div class="price-filter">
-                                <div class="price-filter-inner">
-                                    <div id="slider-range"></div>
-                                    <div class="price_slider_amount">
-                                        <div class="label-input">
-                                            <span>Range:</span><input type="text" id="amount" name="price" placeholder="Add Your Price">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group">
-                                <div class="list-group-item mb-10 mt-10">
-                                    <label class="fw-900">Color</label>
-                                    <div class="custome-checkbox">
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
-                                        <label class="form-check-label" for="exampleCheckbox1"><span>Red (56)</span></label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="">
-                                        <label class="form-check-label" for="exampleCheckbox2"><span>Green (78)</span></label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="">
-                                        <label class="form-check-label" for="exampleCheckbox3"><span>Blue (54)</span></label>
-                                    </div>
-                                    <label class="fw-900 mt-15">Item Condition</label>
-                                    <div class="custome-checkbox">
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="">
-                                        <label class="form-check-label" for="exampleCheckbox11"><span>New (1506)</span></label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox21" value="">
-                                        <label class="form-check-label" for="exampleCheckbox21"><span>Refurbished (27)</span></label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox31" value="">
-                                        <label class="form-check-label" for="exampleCheckbox31"><span>Used (45)</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
-                        </div>
-                        <!-- Product sidebar Widget -->
                         <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
                             <div class="widget-header position-relative mb-20 pb-10">
                                 <h5 class="widget-title mb-10">New products</h5>

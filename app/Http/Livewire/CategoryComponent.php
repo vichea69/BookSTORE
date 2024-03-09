@@ -53,7 +53,8 @@ class CategoryComponent extends Component
             $products = Product::where('category_id',$category_id)->paginate($this->pageSize);
         }
         $categories = Category::orderBy('name','ASC')->get();
-        return view('livewire.category-component',['products'=>$products,'categories'=>$categories,'category_name'=>$category_name]);
+        $nproducts = Product::latest()->take(4)->get();
+        return view('livewire.category-component',['products'=>$products,'categories'=>$categories,'category_name'=>$category_name,'nproducts'=>$nproducts]);
 
     }
 }

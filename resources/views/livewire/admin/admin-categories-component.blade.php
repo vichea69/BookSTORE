@@ -40,7 +40,7 @@
                         @endif
                         <table class="table table-striped">
                             <thead>
-                            <tr>
+                            <tr class="text-center">
                                 <th>#</th>
                                 <th>image</th>
                                 <th>Name</th>
@@ -54,16 +54,16 @@
                                 $i=($categories->currentPage()-1)*$categories->perPage();
                             @endphp
                             @foreach($categories as $category)
-                                <tr>
+                                <tr class="text-center">
                                     <td>{{$i++}}</td>
                                     <td><img src="{{asset('assets/imgs/categories/')}}/{{$category->image}}" alt="{{$category->name}}" width="60"></td>
                                     <td>{{$category->name}}</td>
                                     <td>{{$category->slug}}</td>
                                     <td>{{$category->is_popular == 1 ? 'Yes': 'No'}}</td>
                                     <td>
-                                        <a href="{{route('admin.categories.edit',['category_id'=>$category])}}" class="text-info">Edit</a>
+                                        <a href="{{route('admin.categories.edit',['category_id'=>$category])}}" class="btn btn-outline-dark">Edit</a>
 {{--                                        <a href="{{route('admin.categories.delete',['category_id'=>$categories])}} "  onclick="return confirm('Are you sure to delete?') " class="text-danger" style="margin-left: 20px">Delete</a>--}}
-                                        <a wire:click="deleteCategory({{ $category->id }})" onclick="return confirm('Are you sure to delete?')" class="text-danger" style="margin-left: 20px">Delete</a>
+                                        <a wire:click="deleteCategory({{ $category->id }})" onclick="return confirm('Are you sure to delete?')" class="btn btn-secondary" style="margin-left: 20px">Delete</a>
 
                                     </td>
                                 </tr>

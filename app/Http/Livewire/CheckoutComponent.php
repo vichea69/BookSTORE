@@ -2,11 +2,25 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Product;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Livewire\Component;
 
 class CheckoutComponent extends Component
 {
+
+    public $fullname, $email, $phone, $address;
+    public function rules(){
+        return [
+        'fullname'=>'required',
+            'email'=>'required',
+            'phone'=>'required',
+            'address'=>'required'
+        ];
+    }
+    public function codOrder(){
+
+    }
     public function increaseQuantity($rowId){
         $product = Cart::get($rowId);
         $qty = $product->qty +1 ;

@@ -33,7 +33,6 @@
                                             <li><a href="{{$pageSize == 15 ? 'active':''}}" wire:click.prevent="changePageSize(15)">15</a></li>
                                             <li><a href="{{$pageSize == 25 ? 'active':''}}" wire:click.prevent="changePageSize(25)">25</a></li>
                                             <li><a href="{{$pageSize == 32 ? 'active':''}}" wire:click.prevent="changePageSize(32)">32</a></li>
-                                            <li><a href="#" >All</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,14 +69,14 @@
                                             </a>
                                         </div>
                                         <div class="product-badges product-badges-position product-badges-mrg ">
-                                            <span class="hot">second hand</span>
+                                            <span class="hot">Hot</span>
                                         </div>
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop.html">Device Plaza</a>
+                                            <a href="#">Device Plaza</a>
                                         </div>
-                                        <h2><a href="product-details.html">{{$product->name}}</a></h2>
+                                        <h2><a href="#">{{$product->name}}</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -155,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                            <a href="#" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
                         <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">

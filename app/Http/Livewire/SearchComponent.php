@@ -50,6 +50,7 @@ class SearchComponent extends Component
             $products = Product::where('name','like',$this->search_term)->paginate($this->pageSize);
         }
         $categories = Category::orderBy('name','ASC')->get();
-        return view('livewire.search-component',['products'=>$products,'categories'=>$categories]);
+        $nproducts = Product::latest()->take(4)->get();
+        return view('livewire.search-component',['products'=>$products,'categories'=>$categories,'nproducts'=>$nproducts]);
     }
 }

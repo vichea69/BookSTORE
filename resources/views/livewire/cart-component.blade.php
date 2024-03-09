@@ -22,7 +22,7 @@
                                     <th scope="col">Name</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Total</th>
                                     <th scope="col">Remove</th>
                                 </tr>
                                 </thead>
@@ -68,7 +68,7 @@
                             @endif
                         </div>
                         <div class="cart-action text-end">
-                            <a class="btn  mr-10 mb-sm-15"><i class="fi-rs-shuffle mr-10"></i>Update Cart</a>
+
                             <a href="{{route('shop')}}" class="btn "><i class="fi-rs-shopping-bag mr-10"></i>Continue Shopping</a>
                         </div>
                         <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
@@ -85,9 +85,6 @@
                                                 <select class="form-control select-active">
                                                     <option value="">Choose a option...</option>
                                                     <option value="KH">Cambodia</option>
-                                                    <option value="TH">Thailand</option>
-                                                    <option value="VN">Vietnam</option>
-
                                                 </select>
                                             </div>
                                         </div>
@@ -137,20 +134,12 @@
                                         <table class="table">
                                             <tbody>
                                             <tr>
-                                                <td class="cart_total_label">Cart Subtotal</td>
-                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{Cart::subtotal()}}</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cart_total_label">Tax</td>
-                                                <td class="cart_total_amount"><span class="font-lg fw-900 text-brand">${{Cart::tax()}}</span></td>
-                                            </tr>
-                                            <tr>
                                                 <td class="cart_total_label">Shipping</td>
                                                 <td class="cart_total_amount"> <i class="ti-gift mr-5"></i> Free Shipping</td>
                                             </tr>
                                             <tr>
                                                 <td class="cart_total_label">Total</td>
-                                                <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">${{Cart::total()}}</span></strong></td>
+                                                <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">${{Cart::subtotal()}}</span></strong></td>
                                             </tr>
                                             </tbody>
                                         </table>

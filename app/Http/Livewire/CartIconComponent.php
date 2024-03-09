@@ -13,3 +13,4 @@ class CartIconComponent extends Component
         return view('livewire.cart-icon-component');
     }
 }
+

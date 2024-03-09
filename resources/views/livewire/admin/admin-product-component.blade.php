@@ -7,7 +7,6 @@
             display: block;
         }
     </style>
-
     <main>
         <div class="page-header breadcrumb-wrap">
             <div class="container">
@@ -40,7 +39,7 @@
                             @endif
                             <table class="table table-striped">
                                 <thead>
-                                <tr>
+                                <tr class="text-center">
                                     <th>#</th>
                                     <th>Image</th>
                                     <th>Name</th>
@@ -57,7 +56,7 @@
                                     $i=($products->currentPage()-1)*$products->perPage();
                                 @endphp
                                 @foreach($products as $product)
-                                    <tr>
+                                    <tr class="text-center">
                                         <td>{{$i++}}</td>
                                         <td><img src="{{asset('assets/imgs/products/')}}/{{$product->image}}" alt="{{$product->name}}" width="60"></td>
                                         <td>{{$product->name}}</td>
